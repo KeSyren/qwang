@@ -1,0 +1,26 @@
+How to write a recursive method/function/procedure
+
+	"four factorial"
+	4! = 4*3*2*1=24
+	
+	public static int fact(int n) {
+		if(n == 1 || n == 0) {
+			return 1;
+		} else {
+			int result = fact(n-1);
+			return n * result;
+		}
+	
+	}
+
+	1. Write "if".
+		There must be at least 2 cses:
+		a recursive case(where the method calls itself)
+		and a base case(where the method does not)
+	2. Handle the simplest case(s). "Base Case"
+		Simplest = no recursive call needed (no looping)
+	3. Write the recursive call(s).
+		On the next simpler input/state             (Maybe store result in a variable)
+	4. Assume the recursive call work.			
+		Ask yourself: What does it do?
+		Ask yourself: How does it help?
