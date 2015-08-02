@@ -5,6 +5,6 @@ for instance, binary tree problems, stack problems and etc.
 
 Give myself some advices.
 <p> 1. Use the book "Introduction to Algorithm" as the handbook. 
-2. First, try your intuitive way to solve the problem;
-3. Then, try to use the techniques to optimize the solution;
-4. Finally, summarize formulized procedure for some problems, like recursive function, dynamic programming.
+<p>2. First, try your intuitive way to solve the problem;
+<p>3. Then, try to use the techniques to optimize the solution;
+<p>4. Finally, summarize formulized procedure for some problems, like recursive function, dynamic programming.
