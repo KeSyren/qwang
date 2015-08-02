@@ -18,7 +18,6 @@ public class BinaryTreeInorderTraversal {
 		if(root.right != null){
 			inorderTraversal(root.right);
 		}
-		
 		return treeNodes;
 	}
 }
