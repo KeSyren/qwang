@@ -8,3 +8,5 @@ for instance, binary tree problems, stack problems and etc.
 <p>2. First, try your intuitive way to solve the problem;
 <p>3. Then, try to use the techniques to optimize the solution;
 <p>4. Finally, summarize formulized procedure for some problems, like recursive function, dynamic programming.
+  
+try git pull
