@@ -9,4 +9,6 @@ for instance, binary tree problems, stack problems and etc.
 <p>3. Then, try to use the techniques to optimize the solution;
 <p>4. Finally, summarize formulized procedure for some problems, like recursive function, dynamic programming.
   
-try gits pull
+try git pull
+
+second try git pull
