@@ -1,0 +1,35 @@
+create an empty stack S
+initialize current node as root
+push the current node to S and set current = current->left until 
+if current is None and stack is not empty then
+  a. pop the top item form stack
+  b. print the poped item, set curren = popped_item->right
+  c. go to step 3.
+If current is None and stack is empty then we are done.
+
+class Node:
+  def __init__(self, data):
+    self.data = data
+    self.left = None
+    self.right = None
+    
+   def inOrder(root):
+   
+      current = root
+      stack = []
+      done = 0
+      
+      while True:
+        if current is not None:
+          stack.append(current)
+          current = current.left
+          
+         elif(stack):
+           current = stack.pop()
+           print(current.data, end= " ")
+           current = current.right
+           
+         else:
+            break
+            
+       print()
