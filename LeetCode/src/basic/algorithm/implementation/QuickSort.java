@@ -11,7 +11,7 @@ public class QuickSort {
 
 	public static void quickSortProcess(int[] arr, int L, int R) {
 		if (L < R) {
-			//swap(arr, L+(int)(Math.random() * (R-L+1)), R);
+			//swap(arr, L+(int)(Math.random() * (R-L+1)), R); // random choose a pivot
 			int[] p = partition(arr, L, R);
 			quickSortProcess(arr, L, p[0] - 1);
 			quickSortProcess(arr, p[1] + 1, R);

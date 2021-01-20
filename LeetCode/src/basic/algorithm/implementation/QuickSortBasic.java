@@ -2,7 +2,8 @@ package basic.algorithm.implementation;
 
 
 /**
- * Quick sort is an in-place sort, i.e., it doesn't require any extra space. Merge sort need O(N) extra storage. 
+ * Quick sort (O(NlogN) and O(1)) is an in-place sort, 
+ * i.e., it doesn't require any extra space. Merge sort (O(NlogN) and O(N))) need O(N) extra storage. 
  * @author qingwang
  *
  */
