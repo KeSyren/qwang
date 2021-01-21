@@ -1,7 +1,7 @@
 package basic.algorithm.implementation;
 
 /**
- * Very very important -- greedy algorithm
+ * Very very important -- greedy algorithm, not stable.
  * Construct maxheap (using array) heap sort
  * 1. convert an array to maxheap
  * 2. swap (arr, maxroot, lastleft)
@@ -24,6 +24,7 @@ public class HeapSort {
 		}
 		
 		int heapSize = arr.length;
+		swap(arr, 0, --heapSize);
 		while (heapSize > 0) {
 			heapify(arr, 0, heapSize);
 			swap(arr, 0, --heapSize);
