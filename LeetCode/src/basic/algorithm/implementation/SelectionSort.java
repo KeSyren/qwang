@@ -28,7 +28,7 @@ public class SelectionSort {
 	}
 	
 	public static void main(String[] args) {
-		int[] a = new int[] {41, 1,3,2,5,4};
+		int[] a = new int[] {41,1,3,2,5,4};
 		sort(a);
 		for (int i = 0; i<a.length; i++) {
 			System.out.print(a[i] + " ");
