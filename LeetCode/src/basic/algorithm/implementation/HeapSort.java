@@ -31,7 +31,7 @@ public class HeapSort {
 	}
 
 	// build max heap time complexity O(N)=log1 + log2 + .. + logN
-	public static void heapInsert(int[] arr, int index) {
+	public static void heapInsert(int[] arr, int index) {  // compared with its left and right children
 		while (arr[index] > arr[(index - 1) / 2]) {
 			swap(arr, index, (index - 1) / 2);
 			index = (index - 1) / 2;
