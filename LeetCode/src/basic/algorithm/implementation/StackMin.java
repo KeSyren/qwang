@@ -3,36 +3,40 @@ package basic.algorithm.implementation;
 import java.util.Stack;
 
 public class StackMin {
-	Stack<Integer> a = new Stack<Integer>();
-	Stack<Integer> b = new Stack<Integer>();
+	Stack<Integer> stackData;
+	Stack<Integer> stackMin;
+	
+	public StackMin() {
+		this.stackData = new Stack<Integer>();
+		this.stackMin = new Stack<Integer>(); 
+	}
 	
 	public void push(int obj) {
-		a.push(obj);
-		
-		if (b.isEmpty()) {
-			b.push(obj);
-		} else if (b.peek() > obj) {
-			b.push(obj);
-		} else {;}
-		
+		if (this.stackMin.isEmpty()) {
+			this.stackMin.push(obj);
+		} else if (stackMin.peek() > obj) {
+			this.stackMin.push(obj);
+		} else {
+			int newMin = this.stackMin.peek();
+			this.stackMin.push(newMin);
+		}
+		this.stackData.push(obj);
 	}
 	
 	public Integer pop() {
-		if (a.isEmpty()) {
+		if (this.stackData.isEmpty()) {
 			throw new IllegalArgumentException("The stack is empty");
 		} 
-		if (a.peek() == b.peek()) {
-			b.pop();
-		}
-		return a.pop();
+		this.stackMin.pop();
+		return this.stackData.pop();
 		
 	}
 	
 	public int getMin() {
-		if (b.isEmpty()) {
+		if (this.stackMin.isEmpty()) {
 			throw new IllegalArgumentException("The stack is empty");
 		}
-		return b.peek();
+		return this.stackMin.peek();
 	}
 	
 	public static void main(String[] args) {
@@ -46,7 +50,6 @@ public class StackMin {
 		sm.push(1);
 		
 		System.out.print(sm.getMin());
-		
 		System.out.println();
 	}
 }
