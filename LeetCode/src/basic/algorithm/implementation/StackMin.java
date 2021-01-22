@@ -1,5 +1,10 @@
 package basic.algorithm.implementation;
 
+
+/**
+ * pop push and getmin using O(1)
+ * stack operation
+ */
 import java.util.Stack;
 
 public class StackMin {
