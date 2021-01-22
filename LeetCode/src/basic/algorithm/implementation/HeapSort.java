@@ -47,8 +47,8 @@ public class HeapSort {
 			if (largest == index) {
 				break;
 			}
-			swap(arr, largest, index);
-			index = largest;
+			swap(arr, largest, index); 
+			index = largest;         // left subtree or right subtree
 			left = index * 2 + 1;
 		}
 	}
