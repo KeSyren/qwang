@@ -20,7 +20,7 @@ public class ZigZagPrintMatrix {
 		while (aR != endR + 1) { // A is at the last row.
 			printLevel(matrix, aR, aC, bR, bC, fromUp);
 			aR = aC == endC ? aR + 1 : aR;  // except A is at endC, aR = aR;
-			aC = aC == endC ? aC : aC + 1;  //except A is at endC, aC = aC+ 1;
+			aC = aC == endC ? aC : aC + 1;  //except A is at endC, aC = aC + 1;
 			
 			bC = bR == endR ? bC + 1 : bC;  // except B is at endR, bC = bC;
 			bR = bR == endR ? bR : bR + 1;  // except B is at endR, bR = bR + 1;
@@ -45,7 +45,8 @@ public class ZigZagPrintMatrix {
 	public static void main(String[] args) {
 		int[][] matrix = {{1,2,3,4},
 				          {5,6,7,8},
-				          {9,10,11,12}};
+				          {9,10,11,12},
+				          {13,14,15,16}};
 		printMatrixZigZag(matrix);
 	}
 
