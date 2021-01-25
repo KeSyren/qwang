@@ -2,18 +2,18 @@ package basic.algorithm.linkedlist;
 
 import java.util.Stack;
 
-
-class Node {
-	int value;
-	Node next;
-
-	public Node(int value) {
-		this.value = value;
-		this.next = null;
-	}
-}
-
 public class IsPalindrome {
+	
+	public static class Node {
+		int value;
+		Node next;
+
+		public Node(int value) {
+			this.value = value;
+			this.next = null;
+		}
+	}
+	
 	// needs n extra space
 	public static boolean isPalindrome1(Node head) {
 		Stack<Node> stack = new Stack<Node>();
