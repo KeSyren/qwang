@@ -7,6 +7,8 @@ class TreeNode {
 	
 	public TreeNode(int data) {
 		this.value = data;
+		this.left = null;
+		this.right = null;
 	}
 }
 
@@ -56,14 +58,6 @@ public class PreInPosTraversal {
 		a2.right = a5;
 		a3.left = a6;
 		a3.right = a7;
-		a4.left = null;
-		a4.right = null;
-		a5.left = null;
-		a5.right = null;
-		a6.left = null;
-		a6.right = null;
-		a7.right = null;
-		a7.left = null;
 		
 		preOrderRecur(a1); 
 		System.out.println();
