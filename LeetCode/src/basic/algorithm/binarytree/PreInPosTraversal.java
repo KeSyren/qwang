@@ -65,8 +65,11 @@ public class PreInPosTraversal {
 		a7.right = null;
 		a7.left = null;
 		
-		preOrderRecur(a1);
-		
+		preOrderRecur(a1); 
+		System.out.println();
+		inOrderRecur(a1);
+		System.out.println();
+		posOrderRecur(a1);
 		
 	}
 }
