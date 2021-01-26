@@ -38,7 +38,7 @@ public class FindFirstIntersectNode {
 		}
 
 		if (loop1 != null && loop2 != null) {
-			return bothloop(head1, loop1, head2, loop2);
+			return bothLoop(head1, loop1, head2, loop2);
 		}
 		return null;
 	}
