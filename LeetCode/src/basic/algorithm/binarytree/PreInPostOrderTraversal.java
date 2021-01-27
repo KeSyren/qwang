@@ -33,13 +33,13 @@ public class PreInPostOrderTraversal {
 		inOrderRecur(head.right);
 	}
 	
-	public static void posOrderRecur(TreeNode head) {
+	public static void postOrderRecur(TreeNode head) {
 		if (head == null) {
 			return;
 		}
 		
-		posOrderRecur(head.left);
-		posOrderRecur(head.right);
+		postOrderRecur(head.left);
+		postOrderRecur(head.right);
 		System.out.print(head.value + " ");
 	}
 	
@@ -63,7 +63,7 @@ public class PreInPostOrderTraversal {
 		System.out.println();
 		inOrderRecur(a1);
 		System.out.println();
-		posOrderRecur(a1);
+		postOrderRecur(a1);
 		
 	}
 }
