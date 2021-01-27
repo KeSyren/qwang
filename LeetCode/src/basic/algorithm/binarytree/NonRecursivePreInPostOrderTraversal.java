@@ -2,7 +2,7 @@ package basic.algorithm.binarytree;
 
 import java.util.Stack;
 
-public class NonRecursivePreInPosTraversal {
+public class NonRecursivePreInPostOrderTraversal {
 
 	public static void preOrderUnRecur(TreeNode root) {
 		System.out.print("pre-order: ");
@@ -58,7 +58,7 @@ public class NonRecursivePreInPosTraversal {
 					s1.push(root.left);
 				}
 				if (root.right != null) {
-					s1.push(root.right);
+					s1t.push(root.right);
 				}
 			}
 			while (!s2.isEmpty()) {

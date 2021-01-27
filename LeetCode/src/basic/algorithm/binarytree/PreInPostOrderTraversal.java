@@ -12,7 +12,7 @@ class TreeNode {
 	}
 }
 
-public class PreInPosTraversal {
+public class PreInPostOrderTraversal {
 	
 	public static void preOrderRecur(TreeNode head) {
 		if(head == null) {
