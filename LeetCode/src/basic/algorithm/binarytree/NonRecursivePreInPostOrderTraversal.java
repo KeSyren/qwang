@@ -58,7 +58,7 @@ public class NonRecursivePreInPostOrderTraversal {
 					s1.push(root.left);
 				}
 				if (root.right != null) {
-					s1t.push(root.right);
+					s1.push(root.right);
 				}
 			}
 			while (!s2.isEmpty()) {
