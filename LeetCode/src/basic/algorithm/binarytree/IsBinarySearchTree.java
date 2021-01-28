@@ -4,7 +4,11 @@ import java.util.Stack;
 
 /**
  * 
- * 左子树的值都比它小，右子树的值都比它大
+ * Binary Search Tree is a node-based binary tree data structure which has the following properties:
+
+ * The left subtree of a node contains only nodes with keys lesser than the node’s key.
+ * The right subtree of a node contains only nodes with keys greater than the node’s key.
+ * The left and right subtree each must also be a binary search tree.
  * nonrecursive way
  * in order traversal is ascending  
  * @author qingwang
@@ -22,6 +26,20 @@ public class IsBinarySearchTree {
 			this.left = null;
 			this.right = null;
 		}
+	}
+	
+	public static Node insert(Node node, int value) {
+		if (node == null) {
+			return new Node(value);
+		}
+		else {
+			if (value <= node.value) {
+				node.left = insert(node.left, value);
+			} else {
+				node.right = insert(node.right, value);
+			}
+		}
+		return node;
 	}
 	
 	public static boolean isBST(Node head) {
