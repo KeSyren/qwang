@@ -1,7 +1,5 @@
 package basic.algorithm.binarytree;
 
-import basic.algorithm.binarytree.FindSuccessor.Node;
-
 public class FindPredecessor {
 	public static class Node {
 		public int value;
