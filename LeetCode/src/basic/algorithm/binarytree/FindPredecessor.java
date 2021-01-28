@@ -16,7 +16,7 @@ public class FindPredecessor {
 		if(node == null) return null;
 		
 		if (node.left!= null) {
-			return getRightMost(node.left);
+			return getRightMost(node.left); // find the rightmost in the left subtree
 		} else {
 			Node parent = node.parent;
 			while (parent != null && parent.right != node) {
