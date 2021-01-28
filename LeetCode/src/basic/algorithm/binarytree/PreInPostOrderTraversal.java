@@ -1,11 +1,11 @@
 package basic.algorithm.binarytree;
 	
-class TreeNode {
+class Node {
 	public int value;
-	public TreeNode left;
-	public TreeNode right;
+	public Node left;
+	public Node right;
 	
-	public TreeNode(int data) {
+	public Node(int data) {
 		this.value = data;
 		this.left = null;
 		this.right = null;
@@ -14,7 +14,7 @@ class TreeNode {
 
 public class PreInPostOrderTraversal {
 	
-	public static void preOrderRecur(TreeNode head) {
+	public static void preOrderRecur(Node head) {
 		if(head == null) {
 			return;
 		}
@@ -23,7 +23,7 @@ public class PreInPostOrderTraversal {
 		preOrderRecur(head.right);
 	}
 	
-	public static void inOrderRecur(TreeNode head) {
+	public static void inOrderRecur(Node head) {
 		if (head == null) {
 			return;
 		}
@@ -33,7 +33,7 @@ public class PreInPostOrderTraversal {
 		inOrderRecur(head.right);
 	}
 	
-	public static void postOrderRecur(TreeNode head) {
+	public static void postOrderRecur(Node head) {
 		if (head == null) {
 			return;
 		}
@@ -44,13 +44,13 @@ public class PreInPostOrderTraversal {
 	}
 	
 	public static void main(String[] args) {
-		TreeNode a1 = new TreeNode(1);
-		TreeNode a2 = new TreeNode(2);
-		TreeNode a3 = new TreeNode(3);
-		TreeNode a4 = new TreeNode(4);
-		TreeNode a5 = new TreeNode(5);
-		TreeNode a6 = new TreeNode(6);
-		TreeNode a7 = new TreeNode(7);
+		Node a1 = new Node(1);
+		Node a2 = new Node(2);
+		Node a3 = new Node(3);
+		Node a4 = new Node(4);
+		Node a5 = new Node(5);
+		Node a6 = new Node(6);
+		Node a7 = new Node(7);
 		
 		a1.left = a2;
 		a1.right = a3;

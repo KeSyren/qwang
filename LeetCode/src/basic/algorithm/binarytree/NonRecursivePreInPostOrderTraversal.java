@@ -4,10 +4,10 @@ import java.util.Stack;
 
 public class NonRecursivePreInPostOrderTraversal {
 
-	public static void preOrderUnRecur(TreeNode root) {
+	public static void preOrderUnRecur(Node root) {
 		System.out.print("pre-order: ");
 		if (root != null) {
-			Stack<TreeNode> stack = new Stack<TreeNode>();
+			Stack<Node> stack = new Stack<Node>();
 			stack.add(root);
 			while (!stack.isEmpty()) {
 				root = stack.pop();
@@ -24,10 +24,10 @@ public class NonRecursivePreInPostOrderTraversal {
 		System.out.println();
 	}
 
-	public static void inOrderUnRecur(TreeNode root) {
+	public static void inOrderUnRecur(Node root) {
 		System.out.print("in-order: ");
 		if (root != null) {
-			Stack<TreeNode> stack = new Stack<TreeNode>();
+			Stack<Node> stack = new Stack<Node>();
 			while (!stack.isEmpty() || root != null) {
 				if (root != null) {
 					stack.push(root);
@@ -44,11 +44,11 @@ public class NonRecursivePreInPostOrderTraversal {
 	}
 
 	// use two stacks to implement
-	public static void postOrderUnRecur(TreeNode root) {
+	public static void postOrderUnRecur(Node root) {
 		System.out.print("post-order: ");
 		if (root != null) {
-			Stack<TreeNode> s1 = new Stack<TreeNode>();
-			Stack<TreeNode> s2 = new Stack<TreeNode>();
+			Stack<Node> s1 = new Stack<Node>();
+			Stack<Node> s2 = new Stack<Node>();
 
 			s1.push(root);
 			while (!s1.isEmpty()) {
@@ -68,13 +68,13 @@ public class NonRecursivePreInPostOrderTraversal {
 		System.out.println();
 	}
 	public static void main(String[] args) {
-		TreeNode a1 = new TreeNode(1);
-		TreeNode a2 = new TreeNode(2);
-		TreeNode a3 = new TreeNode(3);
-		TreeNode a4 = new TreeNode(4);
-		TreeNode a5 = new TreeNode(5);
-		TreeNode a6 = new TreeNode(6);
-		TreeNode a7 = new TreeNode(7);
+		Node a1 = new Node(1);
+		Node a2 = new Node(2);
+		Node a3 = new Node(3);
+		Node a4 = new Node(4);
+		Node a5 = new Node(5);
+		Node a6 = new Node(6);
+		Node a7 = new Node(7);
 		
 		a1.left = a2;
 		a1.right = a3;
