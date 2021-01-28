@@ -6,7 +6,7 @@ package basic.algorithm.binarytree;
  * predecessor
  */
 
-public class FindSuccessorNode {
+public class FindSuccessor {
 	public static class Node {
 		public int value;
 		public Node left;
