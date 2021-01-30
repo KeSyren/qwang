@@ -78,8 +78,6 @@ public class CountCompleteBinaryTreeNode {
 		a2.left = a4;
 		a3.right = a5;
 
-	
-		
 		System.out.print(nodeNum(a1));
 	}
 
