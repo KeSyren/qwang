@@ -34,7 +34,7 @@ public class ShortestPath {
 
 	}
 	
-	public static boolean isSum(int[] arr, int i, int sum, int aim) {
+	public static boolean isSum(int[] arr, int i,  int sum, int aim) {
 		if (i == arr.length) return sum == aim;
 		return isSum(arr, i+1, sum, aim) || isSum(arr, i+1, sum + arr[i], aim); // choose or not choose the ith element. 
 	}
